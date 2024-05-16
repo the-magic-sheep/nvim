@@ -21,3 +21,13 @@ Then you'll need to open lua/packer.lua in neovim and enter
 ```
 
 and you should be good to go.
+
+Note that PackerSync will revert the colorscheme to rose-pine.
+I generally use the codedark colorscheme. You can switch to that
+with (#primeagen)
+
+```
+:lua ColorMyPencils("codedark")
+```
+
+This is the default colorscheme when first opening neovim with this config.
