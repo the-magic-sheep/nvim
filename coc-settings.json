@@ -1,0 +1,32 @@
+{
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.formatting.provider": "black",
+    "python.linting.pylintArgs": [
+        "--init-hook",
+        "import sys; sys.path.insert(0, './modules')"
+    ],
+    "pyright.disableDiagnostics": false,
+    "python.pythonPath": "python3",
+    "pyright.testing.provider": "pytest",
+    "languageserver": {
+        "nim": {
+            "command": "nimlsp",
+            "filetypes": [
+                "nim"
+            ],
+            "trace.server": "verbose"
+        }
+    },
+    "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/17.0.3/clangd_17.0.3/bin/clangd",
+    "rust-analyzer.enable": true,
+    "rust-analyzer.rustfmt.extraArgs": [
+        "--config",
+        "max_width=88"
+    ],
+    "workspace.ignoredFolders": [
+        "$HOME",
+        "$HOME/.cargo/**",
+        "$HOME/.rustup/**"
+    ]
+}
