@@ -31,3 +31,6 @@ with (#primeagen)
 ```
 
 This is the default colorscheme when first opening neovim with this config.
+
+It's also worth mentioning that this config uses coc.nvim for lsp management,
+which will not function if Node is not installed on the system.
