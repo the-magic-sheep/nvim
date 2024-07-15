@@ -8,6 +8,8 @@
     ],
     "pyright.disableDiagnostics": false,
     "python.pythonPath": "python3",
+    "pyright.inlayHints.variableTypes": false,
+    "pyright.inlayHints.parameterTypes": false,
     "pyright.testing.provider": "pytest",
     "languageserver": {
         "nim": {
