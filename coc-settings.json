@@ -36,5 +36,6 @@
         "$HOME/.cargo/**",
         "$HOME/.rustup/**"
     ],
+    "snippets.ultisnips.pythonPrompt": false,
     "yaml.format.enable": true
 }
