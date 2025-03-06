@@ -47,4 +47,14 @@ return require('packer').startup(function(use)
         "nvim-telescope/telescope-file-browser.nvim",
         requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim", "nvim-tree/nvim-web-devicons" }
     }
+
+    use{
+        "iamcco/markdown-preview.nvim",
+        run = function() vim.fn["mkdp#util#install"]() end,
+    }
+    use{
+        "m4xshen/hardtime.nvim",
+        requires = { "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim" }
+    }
+
 end)

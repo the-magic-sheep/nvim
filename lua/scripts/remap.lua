@@ -51,5 +51,12 @@ vim.keymap.set("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left>
 vim.keymap.set("n", "<C-J>", "5jzz")
 vim.keymap.set("n", "<C-K>", "5kzz")
 
+vim.keymap.set("i", "<C-J>", "<C-O>j")
+vim.keymap.set("i", "<C-K>", "<C-O>k")
+vim.keymap.set("i", "<C-H>", "<C-O>h")
+vim.keymap.set("i", "<C-L>", "<C-O>l")
+
 vim.keymap.set("n", "<C-h>", "5h")
 vim.keymap.set("n", "<C-l>", "5l")
+
+vim.keymap.set("n", "<leader>v", vim.cmd.vs)

@@ -10,6 +10,7 @@
     "python.pythonPath": "python3",
     "pyright.inlayHints.variableTypes": false,
     "pyright.inlayHints.parameterTypes": false,
+    "pyright.inlayHints.functionReturnTypes": false,
     "pyright.testing.provider": "pytest",
     "languageserver": {
         "nim": {
@@ -26,9 +27,14 @@
         "--config",
         "max_width=88"
     ],
+    "rust-analyzer.inlayHints.typeHints.enable": false,
+    "rust-analyzer.inlayHints.chainingHints.enable": false,
+    "rust-analyzer.inlayHints.parameterHints.enable": false,
+    "rust-analyzer.inlayHints.maxLength": 0,
     "workspace.ignoredFolders": [
         "$HOME",
         "$HOME/.cargo/**",
         "$HOME/.rustup/**"
-    ]
+    ],
+    "yaml.format.enable": true
 }
