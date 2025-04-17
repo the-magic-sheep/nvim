@@ -7,13 +7,11 @@ end)
 
 
 vim.keymap.set("n", "<leader>gd", function()
+    vim.cmd('vsplit')
     local old_cur_pos = vim.fn.getcurpos()
     vim.cmd.call("CocAction('jumpDefinition')")
-    if not Equals(old_cur_pos, vim.fn.getcurpos(), false) then
-        vim.cmd('vsplit')
-        vim.api.nvim_input("<C-w>w")
-        vim.api.nvim_input("<C-O>")
-        vim.api.nvim_input("<C-w>w")
+    if Equals(old_cur_pos, vim.fn.getcurpos(), false) then
+        vim.cmd('q')
     end
 end)
 
