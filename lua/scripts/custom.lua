@@ -7,7 +7,7 @@ end
 function FormatAll()
     local paths = vim.split(vim.fn.glob(vim.fn.getcwd() .. "/**/*"), '\n')
 
-    print("Formatting...")
+    print("Visiting...")
 
     for i, file in pairs(paths) do
         local bn = vim.fn.bufnr(file, true)
